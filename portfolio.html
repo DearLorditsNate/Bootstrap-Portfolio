@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
-    <script src="main.js"></script>
 </head>
 <body>
 
     <!-- header and nav bar -->
     <div class="row border-bottom d-flex">
-        <div class="col-md-1">
+        <div class="col-md-4 offset-md-1 justify-content-md-start justify-content-sm-center">
+            <h1 class="d-md-inline-block d-sm-flex justify-content-sm-center h2 bg-info text-white m-0 p-2 ">Nate Micinski</h1>
         </div>
-        <div class="col-sm-12 col-md-4 text-sm-center justify-content-md-start justify-content-sm-center">
-            <h1 class="h2 bg-info text-white m-0 p-2 d-md-inline-block d-sm-flex justify-content-sm-center">Nate Micinski</h1>
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-md-end justify-content-sm-center">
-            <ul class="d-sm-inline-flex justify-content-sm-center p-0 mt-2">
-                <a href="index.html"><li class="d-inline border-right px-2 text-muted">About</li></a>
-                <a href="portfolio.html"><li class="d-inline border-right px-2 text-muted">Portfolio</li></a>
-                <a href="contact.html"><li class="d-inline px-2 text-muted">Contact</li></a>
+        <div class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-sm-center nav">
+            <ul class="d-sm-inline-flex justify-content-sm-center p-0 mt-2 nav-item">
+                <a href="index.html">
+                    <li class="d-inline border-right px-2 nav-link text-muted">About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li class="d-inline border-right px-2 nav-link text-muted">Portfolio</li>
+                </a>
+                <a href="contact.html">
+                    <li class="d-inline px-2 nav-link text-muted">Contact</li>
+                </a>
             </ul>
         </div>
-        <div class="col-md-1"></div>
     </div>
 
     <!-- main section | portfolio -->
@@ -36,17 +37,22 @@
             <h2 class="border-bottom col-12 text-info">Portfolio</h2>
         </div>
         <div class="row p-4">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6">
                 <div class="card bg-dark text-white mb-4">
                     <img class="card-img" src="assets/images/hangman.jpeg" alt="Card image">
                     <div class="card-img-overlay p-0 d-inline-block align-bottom">
+                        <!--
+                        my super messy and not clean way to get the label overlays to push down far enough. not enough margin-top built in to bootstrap, so I created some empty divs to add padding and margin to to push the rest down ¯\_(ツ)_/¯ 
+
+                        ALSO: these styles get messed up between 992px and 1199px, but they look right for the sizes for the assignment...
+                        -->
                         <div class="p-lg-5 m-lg-5 p-md-4 m-md-4 p-sm-5 m-sm-5"></div>
                         <div class="p-lg-4 m-lg-4 p-md-2 m-md-2 p-sm-2 m-sm-2"></div>
                         <h5 class="bg-info p-3 text-center">Hangman</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6">
                 <div class="card bg-dark text-white mb-4">
                     <img class="card-img" src="assets/images/info-widget.jpeg" alt="Card image">
                     <div class="card-img-overlay p-0 d-inline-block align-bottom">
@@ -59,7 +65,7 @@
         </div>
 
         <div class="row p-4">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6">
                 <div class="card bg-dark text-white mb-4">
                     <img class="card-img" src="assets/images/rock-paper-scissors.jpeg" alt="Card image">
                     <div class="card-img-overlay p-0 d-inline-block align-bottom">
@@ -69,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6">
                 <div class="card bg-dark text-white mb-4">
                     <img class="card-img" src="assets/images/rpg.jpeg" alt="Card image">
                     <div class="card-img-overlay p-0 d-inline-block align-bottom">
@@ -82,7 +88,7 @@
         </div>
 
         <div class="row p-4">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6">
                 <div class="card bg-dark text-white mb-4">
                     <img class="card-img" src="assets/images/trivia.jpeg" alt="Card image">
                     <div class="card-img-overlay p-0 d-inline-block align-bottom">
@@ -98,7 +104,7 @@
     <!-- footer -->
     <footer class="footer bg-secondary py-3 border-top border-info">
         <div class="container text-center">
-        <span class="text-white">Copyright &copy;</span>
+            <span class="text-white">Copyright &copy;</span>
         </div>
     </footer>
     
